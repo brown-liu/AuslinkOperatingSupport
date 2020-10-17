@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\LB87\.nuget\packages\microsoft.net.compilers\1.0.0\build\..\tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201017020822_init2.cs" />
+    <Compile Remove="Migrations\20201017020822_init2.Designer.cs" />
+    <Compile Remove="Migrations\20201017021131_init2.cs" />
+    <Compile Remove="Migrations\20201017021131_init2.Designer.cs" />
+    <Compile Remove="Migrations\20201017021538_newdb.cs" />
+    <Compile Remove="Migrations\20201017021538_newdb.Designer.cs" />
+    <Compile Remove="Migrations\20201017055601_b.cs" />
+    <Compile Remove="Migrations\20201017055601_b.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
